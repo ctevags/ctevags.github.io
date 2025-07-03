@@ -1,19 +1,137 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construcción, Topografía y Equipo Vial</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css">
   <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>
   <style>
     html { scroll-behavior: smooth; }
+    .hero-bg {
+      background-image: url('https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
   </style>
 </head>
 <body class="font-sans text-gray-800 bg-gray-50 tracking-tight antialiased">
-  <h1 class="text-center text-2xl text-red-600 font-bold mt-20">El contenido completo se reintegrará aquí...</h1>
+
+  <header class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <span class="text-2xl font-bold text-gray-800">CTEV</span>
+      <a href="#contacto" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Contacto</a>
+    </div>
+  </header>
+
+  <section id="inicio" class="hero-bg text-white min-h-screen flex flex-col items-center justify-center pt-24" data-aos="fade-up">
+    <h1 class="text-4xl md:text-6xl font-bold text-center">Precisión, tecnología y compromiso en cada trazo</h1>
+    <p class="mt-4 text-2xl md:text-3xl font-semibold text-center">Construcción, Topografía y Equipo Vial</p>
+  </section>
+
+  <section id="quienes-somos" class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-4 text-center">Quiénes Somos</h2>
+    <p class="text-lg leading-relaxed text-center">
+      Somos una empresa especializada en ingeniería civil, topografía y equipo vial. Brindamos soluciones técnicas integrales a proyectos públicos y privados, garantizando precisión, cumplimiento normativo y resultados visibles. Operamos desde Aguascalientes con equipo especializado y personal capacitado para desarrollar obras de infraestructura que transforman espacios.
+    </p>
+  </section>
+
+  <section id="servicios" class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8 text-center">Servicios</h2>
+      <div class="space-y-4">
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Levantamientos Topográficos</summary>
+          <p class="mt-2 text-gray-700">Realizamos levantamientos precisos con equipos modernos para generar planos detallados del terreno.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Renta de Cuadrillas</summary>
+          <p class="mt-2 text-gray-700">Ofrecemos personal técnico capacitado para apoyo en campo, con experiencia en obra civil y topografía.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Planimetría y Altimetría</summary>
+          <p class="mt-2 text-gray-700">Generación de mapas con curvas de nivel y detalle topográfico para proyectos de ingeniería.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Visitas Topográficas</summary>
+          <p class="mt-2 text-gray-700">Revisión y análisis de campo para validar condiciones del terreno y puntos críticos.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Señalamiento Vial</summary>
+          <p class="mt-2 text-gray-700">Instalación de semáforos, señalamiento horizontal y vertical conforme a normativas SCT.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Agua Potable y Alcantarillado</summary>
+          <p class="mt-2 text-gray-700">Diseño y planificación de redes hidráulicas y sanitarias para desarrollos urbanos.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Avalúos y Cálculo de Volúmenes</summary>
+          <p class="mt-2 text-gray-700">Valoración técnica de terrenos y estructuras, cálculo de materiales y movimientos de tierra.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Supervisión de Obra</summary>
+          <p class="mt-2 text-gray-700">Seguimiento técnico-administrativo para garantizar la calidad y cumplimiento del proyecto.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Parques Fotovoltaicos</summary>
+          <p class="mt-2 text-gray-700">Asistencia topográfica y técnica para proyectos de generación solar a gran escala.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Perforación e Hincado de Perfiles</summary>
+          <p class="mt-2 text-gray-700">Colocación de postes y estructuras con maquinaria especializada para obras viales.</p>
+        </details>
+        <details class="bg-white shadow rounded p-4">
+          <summary class="cursor-pointer font-semibold">Venta de Equipo Topográfico</summary>
+          <p class="mt-2 text-gray-700">Distribuidores de marcas como Sokkia, Hi-Target y Topcon. Equipos nuevos y asesoría incluida.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="py-16 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-center mb-8">Galería</h2>
+    <div class="max-w-5xl mx-auto grid sm:grid-cols-3 gap-4">
+      <a href="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria"><img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?auto=format&fit=crop&w=400&q=80" alt="Proyecto 1" class="rounded shadow-md"></a>
+      <a href="https://images.unsplash.com/photo-1535402670401-2c2d82707989?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria"><img src="https://images.unsplash.com/photo-1535402670401-2c2d82707989?auto=format&fit=crop&w=400&q=80" alt="Proyecto 2" class="rounded shadow-md"></a>
+      <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" data-lightbox="galeria"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Proyecto 3" class="rounded shadow-md"></a>
+    </div>
+  </section>
+
+  <section id="contacto" class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+        <form class="space-y-4">
+          <input type="text" placeholder="Nombre" class="w-full p-3 border rounded" />
+          <input type="email" placeholder="Correo" class="w-full p-3 border rounded" />
+          <textarea placeholder="Mensaje" class="w-full p-3 border rounded h-32"></textarea>
+          <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Enviar</button>
+        </form>
+        <div class="mt-8 space-y-2">
+          <p><strong>Dirección:</strong> Carlos Barrón 102, Colonia Altavista, Aguascalientes</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/524499078497?text=Información%20sobre%20CTEV" class="text-blue-600 hover:underline">+52 449 907 8497</a></p>
+          <p><strong>Correo:</strong> <a href="mailto:victima_01@hotmail.com" class="text-blue-600 hover:underline">victima_01@hotmail.com</a></p>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d326.388919079444!2d-102.30483034126343!3d21.89468767404594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ef2a4b4151fd%3A0x6ca254f5e20d0919!2sConstruccion%20Topografia%20y%20Equipo%20Vial!5e1!3m2!1ses-419!2smx!4v1751564165037!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-72 rounded-lg shadow-lg"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-4">
+    © 2025 Construcción, Topografía y Equipo Vial. Todos los derechos reservados.
+  </footer>
+
+  <a href="https://wa.me/524499078497?text=Información%20sobre%20CTEV" class="fixed bottom-4 right-4 bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600" aria-label="WhatsApp">
+    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white"><title>WhatsApp</title><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .165 5.335.162 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
